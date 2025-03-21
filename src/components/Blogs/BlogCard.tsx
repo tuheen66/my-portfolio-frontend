@@ -2,11 +2,13 @@
 
 import { TBlog } from "@/utils/Types";
 import Image from "next/image";
+import DOMPurify from "dompurify";
 
 import Link from "next/link";
 
-
 const BlogCard = ({ blog }: { blog: TBlog }) => {
+  const sanitizedContent = DOMPurify.sanitize(blog.blogContent);
+
   return (
     <div className="flex flex-col lg:flex-row gap-12 border-2 bg-slate-300 dark:bg-slate-900 dark:text-white text-slate-900 border-gray-300 rounded-lg p-5 shadow-lg shadow-gray-500">
       <div className="mb-4 mx-auto">
@@ -22,13 +24,18 @@ const BlogCard = ({ blog }: { blog: TBlog }) => {
         <h1 className="text-xl"> {blog.title}</h1>
         <h2>Author : {blog.author}</h2>
         <h2>Category : {blog.category}</h2>
-
-        <p>
-          {blog?.blogContent.slice(0, 200)}
-          <Link href={`/blogs/${blog._id}`}>
-            <span className="text-orange-600"> _ read more . . .</span>
-          </Link>
-        </p>
+        <div>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: sanitizedContent.slice(0, 200),
+            }}
+          ></p>
+          <p>
+            <Link href={`/blogs/${blog._id}`}>
+              <span className="text-orange-600"> _ read more . . .</span>
+            </Link>
+          </p>
+        </div>
       </div>
     </div>
   );

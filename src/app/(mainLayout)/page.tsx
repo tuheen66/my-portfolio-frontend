@@ -5,7 +5,7 @@ import Experience from "@/components/Experiences/Experience";
 import Intro from "@/components/Intro";
 import Projects from "@/components/Projects/Projects";
 import Skills from "@/components/Skills/Skills";
-import TextEditor from "@/components/TextEditor/TextEditor";
+
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Blogs />
       <Education />
       <Experience/>
-      <TextEditor/>
+     
     </div>
   );
 }

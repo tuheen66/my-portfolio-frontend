@@ -1,6 +1,6 @@
 "use client";
 
-import { getAllExperiences } from "@/utils/actions/EducationService";
+import { getAllExperiences } from "@/utils/actions/ExperienceService";
 import { TExperience } from "@/utils/Types";
 import { useEffect, useState } from "react";
 import ExperienceCard from "./ExperienceCard";
