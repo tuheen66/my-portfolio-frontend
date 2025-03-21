@@ -25,7 +25,7 @@ const Projects = () => {
         </h2>
       </div>
       <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-        {projects?.map((project: TProject) => (
+        {projects?.slice(0, 6).map((project: TProject) => (
           <ProjectCard key={project._id} project={project} />
         ))}
       </section>

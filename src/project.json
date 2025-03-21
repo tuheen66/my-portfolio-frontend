@@ -17,6 +17,42 @@
     "features": [
       "email: admin@mediquick.com",
       "password: admin123",
+      "Any one can visit the website and go through the medicine listings and check detail page.",
+      "If any user wants to buy a medicine he/she needs to login first if registered already. if not registered then he/she needs to register first and then login to buy. ",
+      "Once the order is placed he/she will be diverted to cart page and then with all the medicines cost he/she can proceed to checkout page where he/she can pay by card through stripe.",
+      "Before payment, user must input the city, address and prescription link if required.",
+      "After login customer will be diverted to profile page where he/she can see her profile. he/she can update his/her profile by update profile button",
+      "Customer can see his/her order details in order page.",
+      "Admin will see his dashboard after login and he will see the summery of the business as total order, total revenue and best selling product.",
+      "Admin will see his dashboard link in navbar after login (not visible with customer login) and he will see the summery of the business as total order, total revenue and medicine stock details.",
+      "Admin can see all the users, can see their order history.",
+      "Admin can see all the orders placed. can update order status.",
+      "Admin can create medicine data and update medicine data and delete any order."
+    ],
+    "live_link": "https://mediquick-client.vercel.app/"
+  },
+
+  {
+    "title": "Bicycle Hub",
+    "sub_title": "An online bicycle shop",
+    "image": "https://i.ibb.co.com/9HsHW3ss/Bicycle-hub-small.jpg",
+    "full_image": "https://i.ibb.co.com/PZ1hKSVH/Bicycle-hub.jpg",
+    "technologies": [
+      "React JS",
+      "Mongoose",
+      "Redux",
+      "Node JS",
+      "Express",
+      "TypeScript",
+      "daisyUi",
+      "antdesign",
+      "MongoDB",
+      "JSON Web Token",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "email: admin@mediquick.com",
+      "password: admin123",
       "Any one can visit the website and go through the bicycle listings and check detail page",
       "If any user wants to buy a product he/she needs to login first if registered already. if not registered then he/she needs to register first and then login to buy.",
       "Once the order is placed he/she will be diverted to payment page where he/she can pay by card through stripe.",
@@ -27,7 +63,7 @@
       "Admin can see all the orders placed. can delete any order.",
       "Admin can create product and update price and quantity and delete any order."
     ],
-    "live_link": "https://mediquick-client.vercel.app/"
+    "live_link": "https://bicycle-hub-client.vercel.app/"
   },
 
   {
