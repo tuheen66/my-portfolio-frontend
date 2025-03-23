@@ -1,3 +1,5 @@
+import { Fade } from "react-awesome-reveal";
+
 const Education = () => {
   return (
     <div>
@@ -5,6 +7,8 @@ const Education = () => {
           my <span className="text-orange-600">education</span>
         </h2>
       <div className="overflow-x-auto rounded-xl  bg-slate-300 dark:bg-slate-900 dark:text-white text-slate-900 shadow-lg shadow-slate-500">
+
+        <Fade>
         <table className="table">
           {/* head */}
           <thead className="text-slate-900 font-bold text-lg dark:text-white border-b border-slate-500">
@@ -33,6 +37,7 @@ const Education = () => {
             
           </tbody>
         </table>
+        </Fade>
       </div>
     </div>
   );

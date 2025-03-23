@@ -1,4 +1,5 @@
 "use client";
+import { Fade } from "react-awesome-reveal";
 
 import { getAllExperiences } from "@/utils/actions/ExperienceService";
 import { TExperience } from "@/utils/Types";
@@ -19,13 +20,14 @@ const Experience = () => {
   return (
     <div>
       <h2 className="text-3xl md:text-4xl  lg:text-4xl font-bold text-slate-600 dark:text-white  text-center uppercase mt-8">
-          my <span className="text-orange-600">experiences</span>
-        </h2>
+        my <span className="text-orange-600">experiences</span>
+      </h2>
       <div className="grid grid-cols-1 gap-4">
-
-      {experiences.map((experience: TExperience) => (
-        <ExperienceCard key={experience._id} experience={experience} />
-      ))}
+        <Fade>
+          {experiences?.map((experience: TExperience) => (
+            <ExperienceCard key={experience._id} experience={experience} />
+          ))}
+        </Fade>
       </div>
     </div>
   );
