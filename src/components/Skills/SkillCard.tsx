@@ -2,28 +2,34 @@ import { TSkill } from "@/utils/Types/types";
 import Image from "next/image";
 import * as motion from "motion/react-client";
 
-
-const ball = {
-  width: 128,
-  height: 128,
-  borderRadius: "50%",
-  background: "var(--accent)",
-};
-
 const SkillCard = ({ skill }: { skill: TSkill }) => {
   return (
-    <motion.div 
-    style={ball}
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.8,
-            delay: 0.5,
-            ease: [0, 0.71, 0.2, 1.01],
-          }}
-    className="flex flex-col items-center bg-gray-300 text-slate-800 dark:text-white dark:bg-slate-900 text-xl border-2 border-orange-600 w-32 h-32 justify-center rounded-full ">
-      <Image src={skill.logo} width={50} height={50} alt="logo" />
-      <p>{skill.name}</p>
+    <motion.div
+      className="flex flex-col items-center justify-center gap-3 p-6 w-28 h-28 rounded-2xl backdrop-blur-sm bg-gray-100 dark:bg-slate-700 shadow-lg hover:shadow-xl transition-all border border-orange-500 hover:scale-[1.03]"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.6,
+        ease: [0.16, 1, 0.3, 1],
+      }}
+      whileHover={{
+        y: -5,
+        transition: { duration: 0.2 }
+      }}
+    >
+      <div className="relative w-14 h-14 flex items-center justify-center">
+        <Image 
+          src={skill.logo} 
+          alt={skill.name}
+          width={56} 
+          height={56}
+          className="object-contain w-full h-full"
+        />
+      </div>
+      <p className="font-medium text-sm text-slate-700 dark:text-slate-200 text-center">
+        {skill.name}
+      </p>
     </motion.div>
   );
 };

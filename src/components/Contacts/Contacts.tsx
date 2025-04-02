@@ -32,83 +32,155 @@ const Contacts = () => {
   };
 
   return (
-    <section className=" rounded-xl  mx-auto ">
-      <h2 className="text-3xl md:text-4xl  lg:text-4xl font-bold text-slate-600 dark:text-white  text-center uppercase">
-        contact <span className="text-orange-600">me</span>
-      </h2>
-      <div className="flex flex-col md:flex-row justify-center items-center ">
-        <div className=" space-y-4 p-4 lg:flex-1">
-          <h2 className="text-2xl font-semibold  text-gray-800 dark:text-white">
-            Monirul Hassan
-          </h2>
-          <div className="flex items-center gap-2 text-lg text-gray-800 dark:text-white">
-            <FaHome />
-            <p>Dhaka, Bangladesh</p>
+    <section id="contact" className=" mx-auto px-[5%] pb-12 md:pb-12">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-700 dark:text-white mb-3">
+          Get In <span className="text-orange-500">Touch</span>
+        </h2>
+        <div className="w-20 h-1 bg-orange-500 mx-auto"></div>
+      </div>
+
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+        {/* Contact Info */}
+        <div className="lg:w-2/5 bg-gradient-to-br from-gray-900 to-gray-700 text-white p-8 md:p-10">
+          <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+
+          <div className="space-y-6">
+            <div className="flex items-start gap-4">
+              <div className="mt-1 text-orange-400">
+                <FaHome className="text-xl" />
+              </div>
+              <div>
+                <h4 className="font-medium">Location</h4>
+                <p className="text-gray-300">Dhaka, Bangladesh</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="mt-1 text-orange-400">
+                <FaPhone className="text-xl" />
+              </div>
+              <div>
+                <h4 className="font-medium">Phone</h4>
+                <p className="text-gray-300">+880 1711591602</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="mt-1 text-orange-400">
+                <FaWhatsapp className="text-xl" />
+              </div>
+              <div>
+                <h4 className="font-medium">WhatsApp</h4>
+                <p className="text-gray-300">+880 1711591602</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="mt-1 text-orange-400">
+                <MdOutlineEmail className="text-xl" />
+              </div>
+              <div>
+                <h4 className="font-medium">Email</h4>
+                <p className="text-gray-300">hassan.monirul@gmail.com</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="mt-1 text-orange-400">
+                <FaGithub className="text-xl" />
+              </div>
+              <div>
+                <h4 className="font-medium">GitHub</h4>
+                <p className="text-gray-300">github.com/tuheen66</p>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center gap-2 text-lg text-gray-800 dark:text-white">
-            <FaPhone />
-            <p>+880 1711591602</p>
-          </div>
-          <div className="flex items-center gap-2 text-lg text-gray-800 dark:text-white">
-            <FaWhatsapp />
-            <p> +880 1711591602</p>
-          </div>
-          <div className="flex items-center gap-2 text-lg text-gray-800 dark:text-white">
-            <MdOutlineEmail />
-            <p> hassan.monirul@gmail.com</p>
-          </div>
-          <div className="flex items-center gap-2 text-lg text-gray-800 dark:text-white">
-            <FaGithub />
-            <p> https://github.com/tuheen66</p>
+
+          <div className="mt-8 pt-6 border-t border-gray-700">
+            <h4 className="font-medium mb-3">Available 24/7</h4>
+            <p className="text-gray-300 text-sm">
+              Feel free to contact me anytime. Ill get back to you as soon as
+              possible.
+            </p>
           </div>
         </div>
 
-        <div className=" flex lg:flex-1 justify-center items-center h-[500px] md:w-[80%]   mx-2 md:mx-auto ">
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            className="w-full bg-slate-400 dark:bg-slate-700 text-black dark:text-white p-6 rounded-lg"
-          >
-            <div className="space-y-2 mx-auto ">
-              <div className="col-span-full sm:col-span-3 space-y-2">
-                <label htmlFor="name" className="  ">
-                  Your name
+        {/* Contact Form */}
+        <div className="lg:w-3/5 p-8 md:p-10">
+          <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">
+            Send Me a Message
+          </h3>
+
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                >
+                  Your Name
                 </label>
                 <input
                   {...register("name")}
                   id="name"
                   type="text"
-                  placeholder=""
-                  className="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300 p-2"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:text-white transition"
+                  placeholder="John Doe"
                 />
               </div>
 
-              <div className="col-span-full sm:col-span-3 space-y-2">
-                <label htmlFor="email" className=" ">
-                  Email
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                >
+                  Email Address
                 </label>
                 <input
                   {...register("email")}
                   id="email"
                   type="email"
-                  placeholder=""
-                  className="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300 p-2"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:text-white transition"
+                  placeholder="your@email.com"
                 />
               </div>
-              <div className="col-span-full space-y-2">
-                <label htmlFor="textarea" className=" ">
-                  Write to me
-                </label>
-                <textarea
-                  {...register("message")}
-                  id="textarea"
-                  placeholder=""
-                  className="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300 p-2"
-                />
-              </div>
-              <button className="bg-orange-600 text-white px-4 py-2  flex items-center gap-4 rounded-lg ">
-                Submit
-              </button>
             </div>
+
+            <div>
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+              >
+                Your Message
+              </label>
+              <textarea
+                {...register("message")}
+                id="message"
+                rows={5}
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:text-white transition"
+                placeholder="Hello, I would like to talk about..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full md:w-auto px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg shadow-md transition duration-300 flex items-center justify-center gap-2"
+            >
+              Send Message
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
           </form>
         </div>
       </div>

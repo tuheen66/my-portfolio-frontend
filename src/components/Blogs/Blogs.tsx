@@ -18,7 +18,7 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div>
+    <div className="px-[5%] ">
       <h2 className="text-3xl md:text-4xl  lg:text-4xl font-bold text-slate-600 dark:text-white  text-center uppercase">
         my <span className="text-orange-600">blogs</span>
       </h2>

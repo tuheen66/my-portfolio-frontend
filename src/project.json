@@ -2,8 +2,8 @@
   {
     "title": "Mediquick",
     "sub_title": "An online medicine shop",
-    "image": "https://i.ibb.co.com/SwHK6bjF/Mediquick-small.jpg",
-    "full_image": "https://i.ibb.co.com/KpYr9nGx/Mediquick.png",
+    "image": "https://i.ibb.co.com/GvJvFxhd/sm-Mediquick.png",
+    "full_image": "https://i.ibb.co.com/QFJ5q78B/Mediquick.png",
     "technologies": [
       "Next JS",
       "Node JS",
@@ -30,6 +30,35 @@
       "Admin can create medicine data and update medicine data and delete any order."
     ],
     "live_link": "https://mediquick-client.vercel.app/"
+  },
+
+  {
+    "title": "Heartsync",
+    "sub_title": "An online portal for matchmaking and matrimony",
+    "image": "https://i.ibb.co.com/8nGTfxNf/sm-Heartsync.png",
+    "full_image": "https://i.ibb.co.com/C3LNhPq1/Heartsync.png",
+    "technologies": [
+      "React JS",
+      "Firebase Authentication",
+      "React Router",
+      "Node JS",
+      "Express",
+      "MongoDB",
+      "JSON Web Token",
+      "Tailwind CSS"
+    ],
+
+    "features": [
+      "email: hassan.monirul@gmail.com",
+      "password: 123456",
+      "Users can browse and view existing biodatas.",
+      "Registration and login are required to view detailed biodata.",
+      "Logged in users cannot see the contact details in the biodata unless he/she is premium member. It is required to pay a $5.00 fee to view the contact details in the biodata for any regular users. Once $5.00 fee is paid and admin approves the payment regular logged in user can view contact details. he/she can also make any biodata as favorite with a click of a button.",
+      "Any registered user can request to make his/her biodata to be premium for free and Admin can see the request in the admin Dashboard panel and approves biodata to be premium. Similarly registered users can request to become premium member and Admin can see the request in the Admin panel and approves to become premium member with a click of a button. Admin can make any user Admin with a click of a button",
+      "Logged in user can upload or edit his/her biodata from user panel in dashboard. He/she can view his/her own biodata, contact request/approved and favorite biodata in user panel in dashboard",
+      "Total biodata page has pagination functionality. Moreover biodata can be filtered/ searched according to age, gender and permanent address."
+    ],
+    "live_link": "https://heartsync-5b928.web.app/"
   },
 
   {
@@ -66,34 +95,7 @@
     "live_link": "https://bicycle-hub-client.vercel.app/"
   },
 
-  {
-    "title": "Heartsync",
-    "sub_title": "An online portal for matchmaking and matrimony",
-    "image": "https://i.ibb.co.com/FkdPjYcM/Heartsync.jpg",
-    "full_image": "https://i.ibb.co.com/673BL06y/Heartsync.jpg",
-    "technologies": [
-      "React JS",
-      "Firebase Authentication",
-      "React Router",
-      "Node JS",
-      "Express",
-      "MongoDB",
-      "JSON Web Token",
-      "Tailwind CSS"
-    ],
-
-    "features": [
-      "email: hassan.monirul@gmail.com",
-      "password: 123456",
-      "Users can browse and view existing biodatas.",
-      "Registration and login are required to view detailed biodata.",
-      "Logged in users cannot see the contact details in the biodata unless he/she is premium member. It is required to pay a $5.00 fee to view the contact details in the biodata for any regular users. Once $5.00 fee is paid and admin approves the payment regular logged in user can view contact details. he/she can also make any biodata as favorite with a click of a button.",
-      "Any registered user can request to make his/her biodata to be premium for free and Admin can see the request in the admin Dashboard panel and approves biodata to be premium. Similarly registered users can request to become premium member and Admin can see the request in the Admin panel and approves to become premium member with a click of a button. Admin can make any user Admin with a click of a button",
-      "Logged in user can upload or edit his/her biodata from user panel in dashboard. He/she can view his/her own biodata, contact request/approved and favorite biodata in user panel in dashboard",
-      "Total biodata page has pagination functionality. Moreover biodata can be filtered/ searched according to age, gender and permanent address."
-    ],
-    "live_link": "https://heartsync-5b928.web.app/"
-  },
+  
 
   {
     "title": "Tourismo",

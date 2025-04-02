@@ -10,7 +10,7 @@ export const getAllExperiences = async () => {
         );
       }
   
-      return response;
+      return response.data;
     } catch (error: any) {
       console.log(error);
     }
