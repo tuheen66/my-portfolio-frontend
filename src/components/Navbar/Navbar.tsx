@@ -13,8 +13,6 @@ export type TUser = {
 };
 
 const Navbar = () => {
- 
-
   return (
     <div className="bg-gray-600 text-white py-2 shadow-md px-[5%] sticky top-0 z-10">
       <div className="container mx-auto flex flex-col lg:flex-row gap-4 justify-between items-center">
@@ -26,12 +24,12 @@ const Navbar = () => {
             </h1>
           </Link>
         </div>
-
-        
         <div>
+        <Link href="https://drive.google.com/file/d/1BcSblbbJuVyjhWkEBk6PwPFtws0RDb6x/view?usp=sharing" target="_blank">
+        <button className="bg-orange-600 px-4 py-2 rounded-lg mr-4">Download Resume</button>
+        </Link>
           <ThemeToggle />
         </div>
-        
       </div>
     </div>
   );

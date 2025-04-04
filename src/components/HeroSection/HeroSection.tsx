@@ -23,7 +23,7 @@ const HeroSection = () => {
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6"
             >
               Hi, I&apos;m{" "}
-              <span className="text-orange-600">Monirul Hassan</span>
+              <span className="text-orange-500">Monirul Hassan</span>
             </motion.h1>
 
             <motion.p
@@ -43,12 +43,12 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <a href="#project">
-                <button className="px-8 py-2  border-2 border-orange-500 bg-orange-500 hover:bg-white hover:text-orange-500 text-white  rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
+                <button className="px-8 py-2  border-2 border-orange-500 bg-orange-500 hover:bg-transparent hover:text-orange-500 text-white  rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
                   View My Work
                 </button>
               </a>
               <a href="#contact">
-                <button className="px-8 py-2 border-2 border-orange-500 text-orange-500  dark:text-orange-500 dark:border-orange-500 font-medium rounded-lg hover:bg-orange-500  hover:text-white transition duration-300">
+                <button className="px-8 py-2 border-2 border-orange-500 text-orange-500  dark:text-orange-500 dark:hover:text-white dark:border-orange-500 font-medium rounded-lg hover:bg-orange-500  hover:text-white transition duration-300">
                   Contact Me
                 </button>
               </a>

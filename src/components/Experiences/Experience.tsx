@@ -20,10 +20,10 @@ const Experience = () => {
   return (
     <div className="w-[90%] mx-auto ">
       <h2 className="text-3xl md:text-4xl  lg:text-4xl font-bold text-slate-600 dark:text-white  text-center uppercase mt-8">
-        my <span className="text-orange-600">experiences</span>
+        my <span className="text-orange-500">experiences</span>
       </h2>
       <div>
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <Fade>
             {experiences?.map((experience: TExperience, index:number) => (
               <ExperienceCard key={experience._id} experience={experience} index={index} />

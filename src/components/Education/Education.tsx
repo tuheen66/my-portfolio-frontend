@@ -4,8 +4,8 @@ const Education = () => {
   return (
     <div className="w-[90%] mx-auto  py-12">
   <div className="text-center mb-12">
-    <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
-      My <span className="text-orange-500 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-amber-600">Education</span>
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4 uppercase">
+      My <span className="text-orange-500 ">Education</span>
     </h2>
     <div className="w-24 h-1.5 bg-gradient-to-r from-orange-400 to-amber-500 mx-auto rounded-full"></div>
   </div>

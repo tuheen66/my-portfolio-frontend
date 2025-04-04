@@ -13,9 +13,9 @@ const ProjectCard = ({ project }: { project: TProject }) => {
       className="border-2 border-gray-300 bg-slate-200 dark:bg-slate-900 shadow-xl shadow-slate-600 rounded-2xl mb-12 flex flex-col h-full"
     >
       <div className="flex-grow flex flex-col">
-        <div className="flex justify-center">
+        <div className="flex justify-center h-48  overflow-hidden rounded-t-xl">
           <Image
-            className="rounded-t-xl"
+            className="rounded-t-xl object-top object-cover"
             src={project.image}
             alt="image"
             width={400}
@@ -23,9 +23,9 @@ const ProjectCard = ({ project }: { project: TProject }) => {
           />
         </div>
 
-        <div className="flex  flex-col justify-between flex-grow mt-8">
+        <div className="flex  flex-col justify-between flex-grow mt-4">
           <div className="text-center px-2">
-            <h2 className="mb-4 text-2xl text-slate-700 dark:text-white">
+            <h2 className="mb-2 text-2xl text-slate-700 dark:text-white">
               {project.title}
             </h2>
             <p className="text-slate-700 dark:text-white">{project.sub_title}</p>

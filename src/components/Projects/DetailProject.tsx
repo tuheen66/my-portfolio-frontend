@@ -48,7 +48,7 @@ const DetailProject = () => {
             {project?.technologies?.map((technology: string, index: number) => (
               <span 
                 key={index}
-                className="px-4 py-2 bg-blue-50 dark:bg-gray-700 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium"
+                className="px-4 py-2 bg-orange-100  text-orange-500  rounded-full text-sm font-medium"
               >
                 {technology}
               </span>
@@ -102,12 +102,12 @@ const DetailProject = () => {
           alt="Project screenshot"
           className="w-full h-auto object-cover rounded-t-xl"
         />
-        <div className="p-6 border-t border-gray-200 dark:border-gray-700">
+        {/* <div className="p-6 border-t border-gray-200 dark:border-gray-700">
           <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">Project Highlights</h3>
           <p className="text-gray-600 dark:text-gray-400">
             Modern, responsive design with intuitive user experience and robust functionality.
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>
